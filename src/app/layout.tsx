@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import LeftBio from "@/components/LeftBio";
+import LeftPanel from "@/components/LeftPanel";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,14 +29,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-            <div className="pl-[4.5rem]  pr-[4.5rem] pt-8 pb-8">
-<Header/>
-    </div>
-        <div className="flex pl-[4.5rem]  pr-[4.5rem] w-full">
-          <div className="w-[35%]">
-            <LeftBio/>
+        <Spotlight
+          className="-top-40 -z-50 left-0 md:left-60 md:-top-20"
+          fill="white"
+        />
+
+        <div className="flex w-[95%] justify-center p-14 items-center m-auto">
+          <div className="w-[22%]">
+            <LeftPanel />
           </div>
-          <div className="w-[65%]">{children}</div>
+          <div className="w-[72%] justify-center  items-center m-6">
+            {children}
+          </div>
         </div>
       </body>
     </html>
