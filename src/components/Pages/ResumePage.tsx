@@ -9,7 +9,7 @@ function ResumePage() {
     <div className="p-8  ">
       <TextGenerateEffect
         className="text-4xl font-[600]"
-        duration={3}
+        duration={2}
         filter={false}
         words={"Resume"}
       />

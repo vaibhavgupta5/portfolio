@@ -2,6 +2,7 @@ import React from "react";
 import { CgWebsite } from "react-icons/cg";
 import { IconType } from "react-icons"; // Type for icons
 import * as Icons from "react-icons/cg"; // Import icons (e.g., FontAwesome icons)
+import * as Iconsx from "react-icons/fa"; // Import icons (e.g., FontAwesome icons)
 
 interface HomeCardsProps {
   heading: string;
@@ -10,7 +11,7 @@ interface HomeCardsProps {
 }
 
 function HomeCards({ heading, description, icon }: HomeCardsProps) {
-  const IconComponent: IconType | undefined = (Icons as any)[icon]; // Get icon dynamically
+  const IconComponent: IconType | undefined = (Icons as Record<string, IconType>)[icon] || (Iconsx as Record<string, IconType>)[icon]; // Get icon dynamically
 
   return (
     <div className="flex gap-4 border-t-[2px] border-l-[2px] border-[#3C3C3C] rounded-xl bg-[#222224] p-6">
