@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  images: { domains: ["html.vikinglab.agency", "avatars.githubusercontent.com"] },
+  images: { domains: ["html.vikinglab.agency", "avatars.githubusercontent.com", "images.unsplash.com"] },
 };
 
 export default nextConfig;
