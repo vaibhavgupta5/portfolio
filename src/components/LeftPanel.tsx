@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import { IoIosPhonePortrait } from "react-icons/io";
@@ -7,13 +8,19 @@ import {
   IoPinOutline,
 } from "react-icons/io5";
 import {
+  RiGithubLine,
   RiInstagramLine,
   RiLinkedinBoxLine,
-  RiSpotifyLine,
   RiTwitterXLine,
 } from "react-icons/ri";
 
 function LeftPanel() {
+
+  const redirectTo = (url: string) => {
+    window.open(url, "_blank");
+  }
+
+
   return (
     <div className="flex items-center pt-16 pb-16  justify-center flex-col rounded-2xl border-solid border-[1px] border-[#3C3C3C] p-8 bg-[#1E1E1F] gap-4">
       <Image
@@ -53,7 +60,7 @@ function LeftPanel() {
               PHONE
             </div>
             <div className="text-[#FFFFFF] opacity-80 text-sm">
-              +91 253684 5544
+              +91 991925 3845
             </div>
           </div>
         </div>
@@ -85,10 +92,10 @@ function LeftPanel() {
         </div>
 
         <div className="flex gap-4 justify-center text-lg text-[#cecece] items-center">
-          <RiTwitterXLine className="cursor-pointer" />
-          <RiLinkedinBoxLine className="cursor-pointer" />
-          <RiInstagramLine className="cursor-pointer" />
-          <RiSpotifyLine className="cursor-pointer" />
+        <RiGithubLine onClick={() => redirectTo("https://github.com/vaibhavgupta5")} className="cursor-pointer" />
+          <RiTwitterXLine onClick={() => redirectTo("https://x.com/vaixbhav_")} className="cursor-pointer" />
+          <RiLinkedinBoxLine onClick={() => redirectTo("https://www.linkedin.com/in/vaibhav9705/")} className="cursor-pointer" />
+          <RiInstagramLine onClick={() => redirectTo("https://www.instagram.com/vaixbhav._/")} className="cursor-pointer" />
         </div>
       </div>
     </div>
