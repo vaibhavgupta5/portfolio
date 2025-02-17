@@ -40,10 +40,10 @@ export const TracingBeam = ({
           transition={{ duration: 0.005 }} // Extremely fast transition
         >
           <motion.div
-            className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
+            className="h-2 w-2 rounded-full border border-[#FFDB6E] bg-[#FFDB6E]"
             animate={{
               backgroundColor: scrollYProgress.get() > 0 ? "white" : "#FFDB6E",
-              borderColor: scrollYProgress.get() > 0 ? "white" : "white",
+              borderColor: scrollYProgress.get() > 0 ? "white" : "#FFDB6E",
             }}
             transition={{ duration: 0.05 }}
           />

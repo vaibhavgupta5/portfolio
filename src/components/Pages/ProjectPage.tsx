@@ -142,14 +142,14 @@ function ProjectPage() {
   };
 
   return (
-    <div className="p-8  ">
+    <div className="p-6 md:p-8  ">
       <TextGenerateEffect
         className="text-4xl font-[600]"
         duration={2}
         filter={false}
         words={"Projects"}
       />
-      <hr className="bg-[#FFDB6E] p-1 mt-4 mb-6 rounded-3xl  w-[6%]" />
+      <hr className="bg-[#FFDB6E] p-1 mt-2 md:mt-4 md:mb-6 mb-6 rounded-3xl w-[16%] md:w-[6%] " />
 
       <div className="grid mb-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {paginatedProjects.map((project, index) => (
