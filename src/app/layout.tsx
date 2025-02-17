@@ -4,6 +4,7 @@ import LeftPanel from "@/components/LeftPanel";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { Poppins } from "next/font/google";
 import LeftPanelMobile from "@/components/LeftPanelMobile";
+import Head from "next/head";
 
 const poppins = Poppins({
   display: "swap",
@@ -11,8 +12,9 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "NoobVaibhav",
+  title: "Vaibhav Gupta",
   description: "Portfolio",
+  icons: "favicon.ico",
 };
 
 export default function RootLayout({
@@ -22,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        </Head>
       <body className={poppins.className}>
         <Spotlight
           className="-top-40 -z-50 left-0 md:left-60 md:-top-20"

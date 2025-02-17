@@ -20,6 +20,7 @@ export default function Home() {
 
   return (
     <div className="flex  justify-center relative flex-col rounded-2xl border-solid border-[1px] border-[#3C3C3C] bg-[#1E1E1F] ">
+      
       <div className="bg-[#282829] md:flex hidden text-[16px] font-semibold opacity-80 gap-8 pl-10 pr-10 absolute top-0 right-0  justify-between items-center md:p-5 rounded-bl-2xl rounded-tr-2xl border-solid border-[1px] border-[#3C3C3C]">
         <p
           className={`${
