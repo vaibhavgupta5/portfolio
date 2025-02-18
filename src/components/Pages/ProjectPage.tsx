@@ -164,7 +164,7 @@ function ProjectPage() {
                 {project.links.website !== "" && (
                   <div
                     onClick={() => redirectTo(project.links.website)}
-                    className="p-3 cursor-pointer border-[#3C3C3C] border-[2px] rounded-full bg-[#2B2B2C]"
+                    className="p-3 cursor-pointer border-[#3C3C3C] border-[2px] rounded-full bg-[#2B2B2C] transition-transform duration-300 ease-in-out hover:scale-110  animate-fadeIn"
                   >
                     <IoMdLink className="text-2xl" />
                   </div>
@@ -172,7 +172,7 @@ function ProjectPage() {
 
                 <div
                   onClick={() => redirectTo(project.links.github)}
-                  className="p-3 cursor-pointer rounded-full border-[#3C3C3C] border-[2px] bg-[#2B2B2C]"
+                  className="p-3 cursor-pointer rounded-full border-[#3C3C3C] border-[2px] bg-[#2B2B2C] transition-transform duration-300 ease-in-out hover:scale-110  animate-fadeIn"
                 >
                   <IoLogoGithub className="text-2xl" />
                 </div>

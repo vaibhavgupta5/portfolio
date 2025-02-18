@@ -33,7 +33,7 @@ function HomePage() {
         and drive digital transformation.
       </p>
 
-      <div className="text-2xl font-bold mt-8 mb-6">What Im doing</div>
+      <div className="text-2xl font-bold mt-8 mb-6">What I'm doing</div>
 
       <div className="grid mb-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6">
         <HomeCards

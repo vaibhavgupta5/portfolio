@@ -54,7 +54,7 @@ function ResumePage() {
           <div className=" font-bold"> Full Stack Developer </div>
           <div className=" font-medium text-[#FFDB6E]"> 2022-Present</div>
           <div className=" font-normal text-[#d6d6d6] ">
-            Working for college clubs, freelance, mostlty worked with
+            Working for college clubs, freelance, mostly worked with
             javascript/typescript.
           </div>
         </div>
