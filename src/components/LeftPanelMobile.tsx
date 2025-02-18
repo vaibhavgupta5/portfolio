@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosPhonePortrait } from "react-icons/io";
 import {
   IoCalendarClearOutline,
@@ -19,6 +19,10 @@ function LeftPanelMobile() {
   const redirectTo = (url: string) => {
     window.open(url, "_blank");
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const [openView, setOpenView] = useState(false);
 
@@ -57,27 +61,61 @@ function LeftPanelMobile() {
 
         <div className="flex flex-col mt-6 gap-4">
           {[
-            { icon: <IoMailOutline />, label: "EMAIL", value: "githubvaibhav5@gmail.com" },
-            { icon: <IoIosPhonePortrait />, label: "PHONE", value: "+91 991925 3845" },
-            { icon: <IoCalendarClearOutline />, label: "BIRTHDAY", value: "9 July 2005" },
-            { icon: <IoPinOutline />, label: "ADDRESS", value: "Ghaziabad, Uttar Pradesh" },
+            {
+              icon: <IoMailOutline />,
+              label: "EMAIL",
+              value: "githubvaibhav5@gmail.com",
+            },
+            {
+              icon: <IoIosPhonePortrait />,
+              label: "PHONE",
+              value: "+91 991925 3845",
+            },
+            {
+              icon: <IoCalendarClearOutline />,
+              label: "BIRTHDAY",
+              value: "9 July 2005",
+            },
+            {
+              icon: <IoPinOutline />,
+              label: "ADDRESS",
+              value: "Ghaziabad, Uttar Pradesh",
+            },
           ].map(({ icon, label, value }, index) => (
             <div key={index} className="flex gap-4 items-center">
               <div className="border-l-[2px] border-t-[2px] bg-[#202022] border-[#ffdb6e1e] p-3 rounded-xl">
                 <span className="text-[#FFDB6E]">{icon}</span>
               </div>
               <div>
-                <div className="text-[#B8BEBF] text-[11px] font-semibold">{label}</div>
+                <div className="text-[#B8BEBF] text-[11px] font-semibold">
+                  {label}
+                </div>
                 <div className="text-[#FFFFFF] opacity-80 text-sm">{value}</div>
               </div>
             </div>
           ))}
 
           <div className="flex gap-4 mt-3 justify-center text-lg text-[#cecece] items-center">
-            <RiGithubLine onClick={() => redirectTo("https://github.com/vaibhavgupta5")} className="cursor-pointer hover:scale-110 transition-transform duration-300" />
-            <RiTwitterXLine onClick={() => redirectTo("https://x.com/vaixbhav_")} className="cursor-pointer hover:scale-110 transition-transform duration-300" />
-            <RiLinkedinBoxLine onClick={() => redirectTo("https://www.linkedin.com/in/vaibhav9705/")} className="cursor-pointer hover:scale-110 transition-transform duration-300" />
-            <RiInstagramLine onClick={() => redirectTo("https://www.instagram.com/vaixbhav._/")} className="cursor-pointer hover:scale-110 transition-transform duration-300" />
+            <RiGithubLine
+              onClick={() => redirectTo("https://github.com/vaibhavgupta5")}
+              className="cursor-pointer hover:scale-110 transition-transform duration-300"
+            />
+            <RiTwitterXLine
+              onClick={() => redirectTo("https://x.com/vaixbhav_")}
+              className="cursor-pointer hover:scale-110 transition-transform duration-300"
+            />
+            <RiLinkedinBoxLine
+              onClick={() =>
+                redirectTo("https://www.linkedin.com/in/vaibhav9705/")
+              }
+              className="cursor-pointer hover:scale-110 transition-transform duration-300"
+            />
+            <RiInstagramLine
+              onClick={() =>
+                redirectTo("https://www.instagram.com/vaixbhav._/")
+              }
+              className="cursor-pointer hover:scale-110 transition-transform duration-300"
+            />
           </div>
         </div>
       </div>
