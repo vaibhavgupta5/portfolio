@@ -218,7 +218,7 @@ function ProjectPage() {
           {currentPage} / {totalPages}
         </span>
         <button
-          className="px-3 py-1 text-black  rounded-lg border-[#3C3C3C] border-t-[2px] border-l-[2px] bg-gray-200 disabled:opacity-50"
+          className="px-3 py-1 text-black  rounded-lg border-[#3C3C3C] border-t-[2px] border-l-[2px] bg-[#FFDB6E] disabled:opacity-50"
           onClick={() =>
             setCurrentPage((prev) => Math.min(prev + 1, totalPages))
           }
