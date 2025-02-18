@@ -140,7 +140,6 @@ function ProjectPage() {
   const redirectTo = (url: string) => {
     window.open(url, "_blank");
   };
-
   return (
     <div className="p-6 md:p-8  ">
       <TextGenerateEffect

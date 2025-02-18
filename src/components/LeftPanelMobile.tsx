@@ -27,7 +27,7 @@ function LeftPanelMobile() {
   const [openView, setOpenView] = useState(false);
 
   return (
-    <div className="flex items-center relative pt-8 pb-8 justify-center flex-col rounded-2xl border-solid border-[1px] border-[#3C3C3C] p-4 bg-[#1E1E1F]">
+    <div className="flex  relative pt-8 pb-8 justify-center flex-col rounded-2xl border-solid border-[1px] border-[#3C3C3C] p-6 bg-[#1E1E1F]">
       <div className="flex justify-center items-center gap-4">
         <Image
           alt="image-pfp"
@@ -39,7 +39,7 @@ function LeftPanelMobile() {
         <div className="text-white text-xl font-bold">Vaibhav Gupta</div>
       </div>
 
-      <div className="text-[#B8BEBF] text-sm bg-[#2B2B2C] pl-4 mt-4 rounded-md pr-4 p-1 font-[500]">
+      <div className="text-[#B8BEBF] flex items-center justify-center text-sm bg-[#2B2B2C] pl-4 mt-4 rounded-md pr-4 p-1 font-[500]">
         Full Stack Developer
       </div>
 
