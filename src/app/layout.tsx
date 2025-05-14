@@ -27,7 +27,7 @@ export default function RootLayout({
         <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
-      <body className={poppins.className}>
+      <body className={poppins.className + " bg-[#121212] text-white"}>
         <Spotlight
           className="-top-40 -z-50 left-0 md:left-60 md:-top-20"
           fill="white"

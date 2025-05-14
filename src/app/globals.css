@@ -4,14 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --background: #ffffff;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #121212;
-    --foreground: #ededed;
   }
 }
 
